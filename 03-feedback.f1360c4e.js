@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),r=document.querySelector(".feedback-form textarea"),o=document.querySelector(".feedback-form input"),n="feedback-form-state",l={};function u(e){e.preventDefault(),e.currentTarget.reset(),console.log(l),localStorage.removeItem(n)}function c(){const e=JSON.parse(localStorage.getItem(n)).message,t=JSON.parse(localStorage.getItem(n)).email;e&&(r.value=e,l.message=e),t&&(o.value=t,l.email=t)}function s(e){l[e.target.name]=e.target.value,localStorage.setItem(n,JSON.stringify(l))}a.addEventListener("submit",u),a.addEventListener("input",(0,e.default)(s,500)),c();
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/SerhiiLytviak/goit-js-hw-08/03-feedback.f1360c4e.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.f1360c4e.js.map
